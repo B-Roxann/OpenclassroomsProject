@@ -10,6 +10,7 @@
     --color-2: rgb(30, 30, 30);
     --color-3: rgb(50, 50, 50);
     --color-4: rgb(70,70,70);
+    --color-Or: rgb(218, 165, 32);
     --color-beta : red;
     --color-gamma: green;
 }
@@ -29,7 +30,6 @@
     rgb(255, 215, 0)  
 );
 }
-
 
 body{
     display: flex;
@@ -55,12 +55,8 @@ aside{
     gap: 10px;
 
     color: var(--color-1);
-}
-
-a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow-y: auto;
+    scrollbar-width: none;
 }
 
 .barre-separation{
@@ -98,8 +94,9 @@ aside{
     left: 0;
     top: 100px;
     min-height: calc(100% - 150px);
-
+    max-height: calc(100% - 150px);
     z-index: 1;
+
     transform: translateX(-200px);
     transition: transform 0.75s ease-in-out;
 }
@@ -107,6 +104,7 @@ aside{
 .activeTransition{
     transform: translateX(0px);
 }
+
 
 nav{
     border: 2px solid var(--color-beta);
@@ -126,6 +124,9 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between ;    
+
+    position: relative;
+    z-index: 2;
 }
     
 /*Corps de la page*/
@@ -218,7 +219,10 @@ nav div{
         display: flex;
         flex-direction: column;
     }
-
+    .MenuContainer a{
+        text-decoration: none;
+        font-weight: 1rem;        
+    }
     .MenuPrincipal{
         color: var(--color-1);
         height: 30px;
@@ -234,12 +238,20 @@ nav div{
         display: flex;
         align-items: center;
     }
-    .Menu{
+    .SousMenuContainer{
         width: 100%;
+        padding-left: 0px;
 
         display: flex;
         flex-direction: column; 
+
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.4s ease-out;
+        opacity: 0;
+        height: 0;
     }
+
     .SousMenu{
         color: var(--color-1);
         height: 25px;
@@ -250,11 +262,20 @@ nav div{
         justify-content: flex-start;
     }
 
+
         /*Le MenuAside avec son image est initalisé au dessus*/
 
+    .active{
+        display: flex;
+    }
+    .activeTransitionY{
+        transform: scaleY(1);
+        opacity: 1;
+        height: auto;
+    }
 
 /*Trouver un autre couleur ici*/
-    .MenuAside img:hover, .SousMenu:hover{
+    .MenuPrincipal:hover, .SousMenu:hover{
         background: linear-gradient(135deg,  
         var(--color-4),  
         rgb(184, 134, 11),
@@ -270,6 +291,15 @@ nav div{
         gap: 15px;
     }
 
+    footer a{
+        color: var(--color-Or);
+        font-weight: 600;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
 /*Mise en forme des popups*/
 
 
