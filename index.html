@@ -8,6 +8,12 @@
         <script src="JS/script.js" defer></script>
     </head>
     <body class="fondCuir">
+
+<!-------------------------------------------------------------------------------------------------->
+<!----------------------------------------Navigation en-tête---------------------------------------->
+<!-------------------------------------------------------------------------------------------------->
+
+        
         <nav>
             <div class="logoContainer">
                 <a href="index.html">
@@ -21,10 +27,19 @@
                     <img src="Images/icons8-search-50.png" alt="btnRechercher" title="btnRechercher">                   
                 </a>
             </div>
-            
+            <div class="Menu_User">
+                <div class="alert_User">
+                    <a href=""><img src=""></a>
+                </div>
+            </div>
         </nav>
+
+<!---------------------------------------------------------------------------------------------------->
+<!----------------------------------------Menu Principal Aside---------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+
         <aside id="aside" class="fondOr">
-            <div id="MenuPrincipal">
+            <div class="MenuPrincipal" id="MenuPrincipal">
                 <div class="FermerMenuAside">
                     <img src="Images/icons8-cross-50.png" alt="FermerMenu" title="FermerMenu">Fermer le menu
                 </div>
@@ -33,251 +48,274 @@
                 </div>                    
             </div>
 
-            <hr class="barre-separation">
-
-
-<!--Ici Partie dédiés à la gestion de le facturation-->           
             
-            <div class="MenuContainer">
-                    <div class="MenuPrincipal">
-                        <div class="MenuTitre">Gestion Facturation</div>
-                        <div class="MenuAside">
-                            <img src="Images/icons8-menu-50.png" alt="MenuMain" title="MenuMain">
-                        </div>
-                    </div>
-                    <div class="Menu">
-                        <div class="SousMenu">
-                            <div class="MenuAside">
-                                <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
-                            </div>
-                            <div class="SousMenuTitre">Facture générale</div>
-                        </div>
-                    </div>
-                    <div class="Menu">
-                        <div class="SousMenu">
-                            <div class="MenuAside">
-                                <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
-                            </div>
-                            <div class="SousMenuTitre">Factures nettoyage</div>
-                        </div>
-                    </div>
-                    <div class="Menu">
-                        <div class="SousMenu">
-                            <div class="MenuAside">
-                                <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
-                            </div>
-                            <div class="SousMenuTitre">Factures poubelles</div>
-                        </div>
-                    </div>
-                    <div class="Menu">
-                        <div class="SousMenu">
-                            <div class="MenuAside">
-                                <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
-                            </div>
-                            <div class="SousMenuTitre">Factures Travaux Occ.</div>
-                        </div>
-                    </div>
-                    <div class="Menu">
-                        <div class="SousMenu">
-                            <div class="MenuAside">
-                                <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
-                            </div>
-                            <div class="SousMenuTitre">Factures du mois</div>
-                        </div>
-                    </div>
-                    <div class="Menu">
-                        <div class="SousMenu">
-                            <div class="MenuAside">
-                                <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
-                            </div>
-                            <div class="SousMenuTitre">Impayés</div>
-                        </div>
-                    </div>
-            </div>
-
-
-<!--Ici Partie dédiés à la gestion des clients-->
+            <!------------------------------------------------------------------------------------------>
+            <!--------------------------Partie dédiés à la gestion des clients-------------------------->
+            <!------------------------------------------------------------------------------------------>
 
             <hr class="barre-separation">
             
             <div class="MenuContainer">
-                <div class="MenuPrincipal">
-                    <div class="MenuTitre">Gestion Clients</div>
+                <div class="MenuPrincipal" id="MenuClients">
+                    <a class="MenuTitre">Gestion Clients</a>
                     <div class="MenuAside">
-                        <img src="Images/icons8-menu-50.png" alt="MenuMain" title="MenuMain">
+                        <img src="Images/icons8-business-50.png" alt="Menu Clients" title="Menu Clients">
                     </div>
                 </div>
-                <div class="Menu">
-                    <div class="SousMenu">
+                <ul class="SousMenuContainer" id="Clients">
+                        <li class="SousMenu">
+                            <div class="MenuAside">
+                                <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
+                            </div>
+                            <a class="SousMenuTitre">Contrats</a>
+                        </li>
+                        <li class="SousMenu">
+                            <div class="MenuAside">
+                                <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
+                            </div>
+                            <a class="SousMenuTitre">Devis</a>
+                        </li>
+                        <li class="SousMenu">
+                            <div class="MenuAside">
+                                <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
+                            </div>
+                            <a class="SousMenuTitre">Offres en cours</a>
+                        </li>
+                        <li class="SousMenu">
+                            <div class="MenuAside">
+                                <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
+                            </div>
+                            <a class="SousMenuTitre">Suivis des réclamations</a>
+                        </li>
+                </ul>
+            </div>
+
+            <hr class="barre-separation">
+
+            <!------------------------------------------------------------------------------------------>
+            <!------------------------Partie dédiés à la gestion des plannings-------------------------->
+            <!------------------------------------------------------------------------------------------>
+
+            <div class="MenuContainer">
+                <div class="MenuPrincipal" id="MenuEmployes">
+                    <a class="MenuTitre">Gestion Employés</a>
+                    <div class="MenuAside">
+                        <img src="Images/icons8-management-24.png" alt="MenuMain" title="MenuMain">
+                    </div>
+                </div>
+                <ul class="SousMenuContainer" id="Employes">
+                    <li class="SousMenu">
                         <div class="MenuAside">
                             <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
                         </div>
-                        <div class="SousMenuTitre">Contrats</div>
-                    </div>
-                </div>
-                <div class="Menu">
-                    <div class="SousMenu">
+                        <a class="SousMenuTitre">Plannings</a>
+                    </li>
+                    <li class="SousMenu">
                         <div class="MenuAside">
                             <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
                         </div>
-                        <div class="SousMenuTitre">Devis</div>
-                    </div>
-                </div>
-                <div class="Menu">
-                    <div class="SousMenu">
+                        <a class="SousMenuTitre">Garages</a>
+                    </li>
+                    <li class="SousMenu">
                         <div class="MenuAside">
                             <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
                         </div>
-                        <div class="SousMenuTitre">Suivis des réclamations</div>
-                    </div>
-                </div>
+                        <a class="SousMenuTitre">Travaux occasionnels</a>
+                    </li>
+                    <li class="SousMenu">
+                        <div class="MenuAside">
+                            <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
+                        </div>
+                        <a class="SousMenuTitre">Pointages</a>
+                    </li>
+                    <li class="SousMenu">
+                        <div class="MenuAside">
+                            <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
+                        </div>
+                        <a class="SousMenuTitre">Employés</a>
+                    </li>
+                </ul>
             </div>
 
             <hr class="barre-separation">
 
 
-<!--Ici Partie dédiés à la gestion des plannings-->
-
+            <!------------------------------------------------------------------------------------------>
+            <!-----------------------Partie dédiés à la gestion de le facturation----------------------->           
+            <!------------------------------------------------------------------------------------------>
+            
             <div class="MenuContainer">
-                <div class="MenuPrincipal">
-                    <div class="MenuTitre">Gestion Plannings</div>
+                <div class="MenuPrincipal" id="MenuFacturation">
+                    <a class="MenuTitre">Gestion Facturation</a>
                     <div class="MenuAside">
-                        <img src="Images/icons8-menu-50.png" alt="MenuMain" title="MenuMain">
+                        <img src="Images/icons8-sales-performance-50.png" alt="MenuMain" title="MenuMain">
                     </div>
                 </div>
-                <div class="Menu">
-                    <div class="SousMenu">
+                <ul class="SousMenuContainer" id="Facturation">
+                    <li class="SousMenu">
                         <div class="MenuAside">
                             <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
                         </div>
-                        <div class="SousMenuTitre">Pointages</div>
-                    </div>
-                </div>
-                <div class="Menu">
-                    <div class="SousMenu">
+                        <a class="SousMenuTitre">Facture générale</a>
+                    </li>
+                    <li class="SousMenu">
                         <div class="MenuAside">
                             <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
                         </div>
-                        <div class="SousMenuTitre">Garages</div>
-                    </div>
-                </div>
-                <div class="Menu">
-                    <div class="SousMenu">
+                        <a class="SousMenuTitre">Factures nettoyage</a>
+                    </li>
+                    <li class="SousMenu">
                         <div class="MenuAside">
                             <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
                         </div>
-                        <div class="SousMenuTitre">Travaux occasionnels</div>
-                    </div>
-                </div>
+                        <a class="SousMenuTitre">Factures poubelles</a>
+                    </li>
+                    <li class="SousMenu">
+                        <div class="MenuAside">
+                            <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
+                        </div>
+                        <a class="SousMenuTitre">Factures Travaux Occ.</a>
+                    </li>
+                    <li class="SousMenu">
+                        <div class="MenuAside">
+                            <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
+                        </div>
+                        <a class="SousMenuTitre">Factures du mois</a>
+                    </li>
+                    <li class="SousMenu">
+                        <div class="MenuAside">
+                            <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
+                        </div>
+                        <a class="SousMenuTitre">Impayés</a>
+                    </li>
+                </ul>
             </div>
+
 
             <hr class="barre-separation">
 
 
-<!--Ici Partie dédiés à la gestion d'entreprise-->
+            <!------------------------------------------------------------------------------------------>
+            <!--------------------------Partie dédiés à la gestion d'entreprise------------------------->
+            <!------------------------------------------------------------------------------------------>
 
             <div class="MenuContainer">
-                <div class="MenuPrincipal">
-                    <div class="MenuTitre">Gestion d'entreprise</div>
+                <div class="MenuPrincipal" id="MenuEntreprise">
+                    <a class="MenuTitre">Gestion d'entreprise</a>
                     <div class="MenuAside">
-                        <img src="Images/icons8-menu-50.png" alt="MenuMain" title="MenuMain">
+                        <img src="Images/icons8-organization-50.png" alt="MenuMain" title="MenuMain">
                     </div>
                 </div>
-                <div class="Menu">
-                    <div class="SousMenu">
+                <ul class="SousMenuContainer" id="Entreprise">
+                    <li class="SousMenu">
                         <div class="MenuAside">
                             <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
                         </div>
-                        <div class="SousMenuTitre">Analytique</div>
-                    </div>
-                </div>
-                <div class="Menu">
-                    <div class="SousMenu">
+                        <a class="SousMenuTitre">Analytique</a>
+                    </li>
+                    <li class="SousMenu">
                         <div class="MenuAside">
                             <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
                         </div>
-                        <div class="SousMenuTitre">Achats</div>
-                    </div>
-                </div>
-                <div class="Menu">
-                    <div class="SousMenu">
+                        <a class="SousMenuTitre">Achats</a>
+                    </li>
+                    <li class="SousMenu">
                         <div class="MenuAside">
                             <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
                         </div>
-                        <div class="SousMenuTitre">Produits</div>
-                    </div>
-                </div>
-                <div class="Menu">
-                    <div class="SousMenu">
+                        <a class="SousMenuTitre">Produits</a>
+                    </li>
+                    <li class="SousMenu">
                         <div class="MenuAside">
                             <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
                         </div>
-                        <div class="SousMenuTitre">Parc véhicules</div>
-                    </div>
-                </div>
+                        <a class="SousMenuTitre">Parc véhicules</a>
+                    </li>
+                    <li class="SousMenu">
+                        <div class="MenuAside">
+                            <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
+                        </div>
+                        <a class="SousMenuTitre">Stocks</a>
+                    </li>
+                </ul>
             </div>
             
+
             <hr class="barre-separation">
 
-<!--Ici Partie dédiés aux paramètres-->
+
+            <!------------------------------------------------------------------------------------------>
+            <!-------------------------------Partie dédiés aux paramètres------------------------------->
+            <!------------------------------------------------------------------------------------------>
 
             <div class="MenuContainer">
-                <div class="MenuPrincipal">
-                    <div class="MenuTitre">Paramètres</div>
+                <div class="MenuPrincipal" id="MenuParametres">
+                    <a class="MenuTitre">Paramètres</a>
                     <div class="MenuAside">
-                        <img src="Images/icons8-menu-50.png" alt="MenuMain" title="MenuMain">
+                        <img src="Images/icons8-settings-50.png" alt="MenuMain" title="MenuMain">
                     </div>
                 </div>
-                <div class="Menu">
-                    <div class="SousMenu">
+                <ul class="SousMenuContainer" id="Parametres">
+                    <li class="SousMenu">
                         <div class="MenuAside">
                             <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
                         </div>
-                        <div class="SousMenuTitre">Syndics</div>
-                    </div>
-                </div>
-                <div class="Menu">
-                    <div class="SousMenu">
+                        <a class="SousMenuTitre">Syndics</a>
+                    </li>
+                    <li class="SousMenu">
                         <div class="MenuAside">
                             <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
                         </div>
-                        <div class="SousMenuTitre">Indices/Augm. Salaire min.</div>
-                    </div>
-                </div>
-                <div class="Menu">
-                    <div class="SousMenu">
+                        <a class="SousMenuTitre">Indices/Salaire min.</a>
+                    </li>
+                    <li class="SousMenu">
                         <div class="MenuAside">
                             <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
                         </div>
-                        <div class="SousMenuTitre">Taux TVA</div>
-                    </div>
-                </div>
-                <div class="Menu">
-                    <div class="SousMenu">
+                        <a class="SousMenuTitre">Taux TVA</a>
+                    </li>
+                    <li class="SousMenu">
                         <div class="MenuAside">
                             <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
                         </div>
-                        <div class="SousMenuTitre">Jours fériés</div>
-                    </div>
-                </div>
+                        <a class="SousMenuTitre">Jours fériés</a>
+                    </li>
+                    <li class="SousMenu">
+                        <div class="MenuAside">
+                            <img src="Images/icons8-right-50.png" alt="MenuIcon" title="MenuIcon">
+                        </div>
+                        <a class="SousMenuTitre">Fournisseurs</a>
+                    </li>
+                </ul>
             </div>
             
             <hr class="barre-separation">
 
         </aside>
+<!------------------------------------------------------------------------------------------>
+<!-------------------------------------------Main------------------------------------------->
+<!------------------------------------------------------------------------------------------>
+
+
         <main>
             Main
         </main>
-        <footer>
+
+
+<!------------------------------------------------------------------------------------------>
+<!------------------------------------------Footer------------------------------------------>
+<!------------------------------------------------------------------------------------------>
+
+        <footer class="fondCuir">
             <div>
                 <div>
-                    <a href="index.html">Services</a>
+                    <a href="#">Services</a>
                 </div>
                 <div>
-                    <a href="index.html">A propos</a>
+                    <a href="#">A propos</a>
                 </div>
                 <div>
-                    <a href="index.html">Contact</a>
+                    <a href="#">Contact</a>
                 </div>
             </div>  
             <div>
